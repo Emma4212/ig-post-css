@@ -1,80 +1,84 @@
-body {
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
 }
 
-.postinstagram {
-    margin-top: 20px;
-    height: 400px;
-    width: 400px;
-    align-items: center;
-    justify-content: center;
+.post {
+    width: 30%;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
 }
 
 .heading {
-    background: white;
-    position: relative;
-    height: 35px;
-    width: 400px;
-
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+}
+.heading h1{
+    text-transform: uppercase;
+}
+.heading .user{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-.title__heading {
-    position: absolute;
-    left: 7%;
-    top: 15%;
+.heading i {
+    font-size: 30px;
+    margin-right: 20px;
 }
 
-.title__heading h6 {
-    background: white;
-    margin: 0px;
-    padding: 0px;
+.heading-title {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    padding-bottom: 5px;
 }
 
-.icon_right {
-    position: absolute;
-    right: 0%;
-    top: 15%;
+
+.icono-derecho {
+    margin-left: auto;
 }
 
-.icon_left {
-    position: absolute;
-    left: 2.5%;
-    top: 15%;
+img {
+    width: 100%;
+    display: block;
 }
 
-.img {
-    width: 400px;
-    height: 400px;
+.content {
+    padding: 10px;
 }
 
-.likes {
+.icons {
     display: flex;
     justify-content: space-between;
-    background: white;
-    padding-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 0px;
 }
 
-i {
-    height: 13px; 
-    width: 13px;
-    background: white;
-    padding: 2px;
-}
-
-.footer {
-    background: white;
+.icons i {
+    font-size: 35px;
+    letter-spacing: 5px;
 }
 
 p {
-
-
-    font-family: Arial, Helvetica, sans-serif;
-font-size: small;
-padding-left: 5px;
-padding-right: 10px;
-text-align: justify;
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 500;
+}
+span{
+    font-weight: 800;
 }
